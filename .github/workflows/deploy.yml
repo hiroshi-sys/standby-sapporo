@@ -26,10 +26,11 @@ jobs:
         with:
           node-version: "20"
 
+      # pnpmのセットアップ方法を修正しました
       - name: Install pnpm
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@v4
         with:
-          version: 8
+          version: 9
 
       - name: Install dependencies
         run: pnpm install
